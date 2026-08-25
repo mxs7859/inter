@@ -321,9 +321,9 @@ class Utility(commands.Cog):
         """Shows information about this bot."""
         embed = discord.Embed(color=self.bot.main_color, timestamp=discord.utils.utcnow())
         embed.set_author(
-            name="Modmail - About",
+            name="Modmail - Hosted by Valure Hosting Services at Valure Technologies",
             icon_url=self.bot.user.display_avatar.url,
-            url="https://discord.gg/F34cRU8",
+            url="https://discord.gg/AHNnpytdAV",
         )
         embed.set_thumbnail(url=self.bot.user.display_avatar.url)
 
@@ -335,8 +335,8 @@ class Utility(commands.Cog):
         embed.add_field(name="Uptime", value=self.bot.uptime)
         embed.add_field(name="Latency", value=f"{self.bot.latency * 1000:.2f} ms")
         embed.add_field(name="Version", value=f"`{self.bot.version}`")
-        embed.add_field(name="Authors", value="`kyb3r`, `Taki`, `fourjr`")
-        embed.add_field(name="Hosting Method", value=self.bot.hosting_method.name)
+        embed.add_field(name="Authors", value="`kyb3r`, `Taki`, `fourjr`, `@lostinlusail`")
+        embed.add_field(name="Hosting Method", value=(Valure Hosting Services)[https://discord.gg/AHNnpytdAV])
 
         changelog = await Changelog.from_url(self.bot)
         latest = changelog.latest_version
@@ -350,9 +350,9 @@ class Utility(commands.Cog):
             footer = "You are up to date with the latest version."
 
         embed.add_field(
-            name="Want Modmail in Your Server?",
-            value="Follow the installation guide on [GitHub](https://github.com/modmail-dev/modmail/) "
-            "and join our [Discord server](https://discord.gg/cnUpwrnpYb)!",
+            name="Want to host a Modmail in Your Server?",
+            value="Join (Valure Technologies)[https://discord.gg/AHNnpytdAV] "
+            "and DM @Valure Chatbot To BEGIN!",
             inline=False,
         )
 
